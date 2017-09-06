@@ -1,10 +1,16 @@
-import org.assertj.core.api.Assertions;
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class FizzBuzzTest {
 
     @Test
     public void should_return_same_number_if_not_dividable_by_3_5_or_15() throws Exception {
-        Assertions.assertThat(FizzBuzz.play(0)).isEqualTo("0");
+        assertThat(FizzBuzz.play(1)).isEqualTo("1");
+    }
+
+    @Test
+    public void should_return_Fizz_if_number_is_dividable_by_3() throws Exception {
+        assertThat(FizzBuzz.play(3)).isEqualTo("Fizz");
     }
 }
