@@ -1,9 +1,12 @@
 public class FizzBuzz {
 
     public static String play(int value){
-        if (value % 15 == 0) return "FizzBuzz";
-        else if (value % 5 == 0) return "Buzz";
-        else if (value % 3 == 0) return "Fizz";
-        return Integer.toString(value);
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for (GameDividers divider : GameDividers.values()) {
+            if(value % divider.getDivider() == 0) stringBuilder.append(divider.getResult());
+        }
+
+        return stringBuilder.length() != 0 ? stringBuilder.toString() : Integer.toString(value);
     }
 }
