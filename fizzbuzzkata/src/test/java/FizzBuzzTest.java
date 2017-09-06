@@ -7,6 +7,8 @@ public class FizzBuzzTest {
     @Test
     public void should_return_same_number_if_not_dividable_by_3_5_or_15() throws Exception {
         assertThat(FizzBuzz.play(1)).isEqualTo("1");
+        assertThat(FizzBuzz.play(7)).isEqualTo("7");
+        assertThat(FizzBuzz.play(8)).isEqualTo("8");
     }
 
     @Test
