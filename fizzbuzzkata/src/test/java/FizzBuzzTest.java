@@ -14,6 +14,8 @@ public class FizzBuzzTest {
     @Test
     public void should_return_Fizz_if_number_is_dividable_by_3() throws Exception {
         assertThat(FizzBuzz.play(3)).isEqualTo("Fizz");
+        assertThat(FizzBuzz.play(9)).isEqualTo("Fizz");
+        assertThat(FizzBuzz.play(33)).isEqualTo("Fizz");
     }
 
     @Test
