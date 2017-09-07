@@ -1,3 +1,5 @@
+package fizzbuzz;
+
 public class FizzBuzz {
 
     public static String play(int value){

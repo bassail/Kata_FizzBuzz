@@ -1,3 +1,5 @@
+package fizzbuzz;
+
 public enum GameDividers {
     THREE(3, "Fizz"),
     FIVE(5, "Buzz");
